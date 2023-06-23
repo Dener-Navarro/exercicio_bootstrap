@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #182c61;
+  color: #ecf0f1;
+  height: 50px;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+header h1 {
+  font-weight: bold;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 16px;
+  padding-right: 16px;
+}
+
+header nav li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  text-align: left;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .container {
+  align-items: center;
+  padding: 16px;
+  max-width: 1050px;
+}
+
+section {
+  padding: 18px 0;
+  color: black;
+  font-size: 16px;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+section img {
+  float: left;
+  max-height: 270px;
+  margin-right: 16px;
+}
+
+.itens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo {
+  text-align: left;
+  margin-top: 70px;
+}
+
+.container h2 {
+  border-bottom: 2px solid #182c61;
+  padding-bottom: 16px;
+  display: flex;
+  color: #182c61;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.itens article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.itens-img,
+h3 {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.itens-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.add-car {
+  background-color: #182c61;
+  color: #ecf0f1;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .container {
+
+    max-width: 90%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .itens {
+    display: block;
+  }
+
+  header {
+    padding-left: 16px;
+  }
+
+  header nav li {
+    margin-left: 4px;
+    font-size: 14px;
+    padding-right: 4px;
+  }
+
+  section img,
+  h2 {
+    max-width: 100%;
+    padding-left: 1px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding-left: 8px;
+    padding-right: 20px;
+    margin-bottom: 2px;
+  }
+
+  header nav li {
+    margin-left: 8px;
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .container {
+    max-width: 90%;
+
+  }
+
+  .container img.store-front {
+    width: 90%;
+    height: auto;
+    padding-left: 90px;
+    margin-bottom: 20px;
+  }
+
+  section img {
+    max-width: 100%;
+  }
+
+  .container h2 {
+    padding-right: 400px;
+  }
+
+  .itens {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+  }
+}
